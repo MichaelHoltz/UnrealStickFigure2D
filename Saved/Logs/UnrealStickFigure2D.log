@@ -1,9 +1,9 @@
-﻿Log file open, 12/11/16 15:19:06
+﻿Log file open, 12/12/16 11:37:00
 LogInit:Display: Running engine for game: UnrealStickFigure2D
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(579480249) SRandInit(579480249).
+LogInit:Display: RandInit(1055553436) SRandInit(1055553436).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.121368
+LogStats: Stats thread started at 0.103345
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -143,373 +143,633 @@ LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.14/Engine/Binaries/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.12.11-23.19.07:842][  0]LogInit: Selected Device Profile: [Windows]
-[2016.12.11-23.19.07:842][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.12.11-23.19.07:981][  0]LogInit: Computer: DELL_7010
-[2016.12.11-23.19.07:981][  0]LogInit: User: Michael
-[2016.12.11-23.19.07:981][  0]LogInit: CPU Page size=65536, Cores=4
-[2016.12.11-23.19.07:981][  0]LogInit: High frequency timer resolution =3.312871 MHz
-[2016.12.11-23.19.07:981][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2016.12.11-23.19.07:981][  0]LogMemory: Platform Memory Stats for Windows
-[2016.12.11-23.19.07:981][  0]LogMemory: Process Physical Memory: 265.56 MB used, 265.56 MB peak
-[2016.12.11-23.19.07:981][  0]LogMemory: Process Virtual Memory: 265.59 MB used, 265.59 MB peak
-[2016.12.11-23.19.07:981][  0]LogMemory: Physical Memory: 4116.24 MB used,  4030.29 MB free, 8146.54 MB total
-[2016.12.11-23.19.07:981][  0]LogMemory: Virtual Memory: 664.99 MB used,  4030.29 MB free, 8388608.00 MB total
-[2016.12.11-23.19.08:129][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.12.11-23.19.09:152][  0]LogD3D11RHI: D3D11 adapters:
-[2016.12.11-23.19.09:162][  0]LogD3D11RHI:    0. 'AMD Radeon HD 7000 series' (Feature Level 11_0)
-[2016.12.11-23.19.09:162][  0]LogD3D11RHI:       1008/0/3817 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
-[2016.12.11-23.19.09:171][  0]LogD3D11RHI:    1. 'AMD Radeon HD 7000 series' (Feature Level 11_0)
-[2016.12.11-23.19.09:171][  0]LogD3D11RHI:       1008/0/3817 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
-[2016.12.11-23.19.09:171][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.12.11-23.19.09:175][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.12.11-23.19.09:175][  0]LogD3D11RHI:     GPU DeviceId: 0x6778 (for the marketing name, search the web for "GPU Device Id")
-[2016.12.11-23.19.09:175][  0]LogWindows: EnumDisplayDevices:
-[2016.12.11-23.19.09:175][  0]LogWindows:    0. 'AMD Radeon HD 7000 series' (P:1 D:1)
-[2016.12.11-23.19.09:175][  0]LogWindows:    1. 'AMD Radeon HD 7000 series' (P:0 D:0)
-[2016.12.11-23.19.09:175][  0]LogWindows:    2. 'AMD Radeon HD 7000 series' (P:0 D:0)
-[2016.12.11-23.19.09:176][  0]LogWindows:    3. 'AMD Radeon HD 7000 series' (P:0 D:0)
-[2016.12.11-23.19.09:176][  0]LogWindows:    4. 'AMD Radeon HD 7000 series' (P:0 D:1)
-[2016.12.11-23.19.09:176][  0]LogWindows:    5. 'AMD Radeon HD 7000 series' (P:0 D:0)
-[2016.12.11-23.19.09:176][  0]LogWindows:    6. 'AMD Radeon HD 7000 series' (P:0 D:0)
-[2016.12.11-23.19.09:176][  0]LogWindows:    7. 'AMD Radeon HD 7000 series' (P:0 D:0)
-[2016.12.11-23.19.09:177][  0]LogWindows:    8. 'RDPDD Chained DD' (P:0 D:0)
-[2016.12.11-23.19.09:177][  0]LogWindows:    9. 'RDP Encoder Mirror Driver' (P:0 D:0)
-[2016.12.11-23.19.09:177][  0]LogWindows:    10. 'RDP Reflector Display Driver' (P:0 D:0)
-[2016.12.11-23.19.09:177][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2016.12.11-23.19.09:177][  0]LogD3D11RHI:     Adapter Name: AMD Radeon HD 7000 series
-[2016.12.11-23.19.09:177][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2016.12.11-23.19.09:177][  0]LogD3D11RHI:      Driver Date: Unknown
-[2016.12.11-23.19.09:177][  0]LogRHI: Texture pool is 706 MB (70% of 1008 MB)
-[2016.12.11-23.19.09:185][  0]LogD3D11RHI: Async texture creation enabled
-[2016.12.11-23.19.09:199][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
-[2016.12.11-23.19.09:199][  0]LogShaderCompilers: Guid format shader working directory is -13 characters bigger than the processId version (//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Intermediate/Shaders/WorkingDirectory/6520/).
-[2016.12.11-23.19.09:200][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Michael/AppData/Local/Temp/UnrealShaderWorkingDir/E7CA8904443BD1426283B9A07846ECDC/'.
-[2016.12.11-23.19.09:200][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.12.11-23.19.11:638][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.12.11-23.19.11:827][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2016.12.11-23.19.12:007][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2016.12.11-23.19.12:190][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2016.12.11-23.19.12:384][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2016.12.11-23.19.12:607][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.12.11-23.19.12:804][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.12.11-23.19.12:974][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.12.11-23.19.13:105][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.12.11-23.19.13:303][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.12.11-23.19.13:530][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.12.11-23.19.13:694][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.12.11-23.19.13:858][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.12.11-23.19.14:086][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.12.11-23.19.14:278][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.12.11-23.19.14:618][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.12.11-23.19.14:618][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.12.11-23.19.14:739][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.12.11-23.19.15:069][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.12.11-23.19.15:181][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.12.11-23.19.15:331][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2016.12.11-23.19.15:482][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.12.11-23.19.15:768][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.12.11-23.19.15:952][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.12.11-23.19.15:952][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.12.11-23.19.17:632][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.12.11-23.19.18:149][  0]LogDerivedDataCache: Loaded boot cache 0.52s 50MB C:/Users/Michael/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2016.12.11-23.19.18:149][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Michael/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
-[2016.12.11-23.19.18:151][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.12.11-23.19.18:152][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.12.11-23.19.18:153][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.12.11-23.19.18:153][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.12.11-23.19.18:191][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.12.11-23.19.18:202][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Michael/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.12.11-23.19.20:667][  0]LogInit: Selected Device Profile: [Windows]
-[2016.12.11-23.19.20:676][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.12.11-23.19.21:299][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2016.12.11-23.19.21:469][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2016.12.11-23.19.21:599][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2016.12.11-23.19.21:599][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2016.12.11-23.19.21:599][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.12.11-23.19.23:384][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: unrealstickfigure2d, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2893249720
-[2016.12.11-23.19.23:624][  0]LogAssetRegistry: FAssetRegistry took 0.0204 seconds to start up
-[2016.12.11-23.19.25:008][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 1.275664 seconds
-[2016.12.11-23.19.25:018][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
-[2016.12.11-23.19.25:018][  0]LogUObjectAllocator: 6935848 out of 0 bytes used by permanent object pool.
-[2016.12.11-23.19.25:018][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.12.11-23.19.25:661][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.12.11-23.19.28:261][  0]LogSlate: Using Freetype 2.6.0
-[2016.12.11-23.19.28:278][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.12.11-23.19.28:278][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.12.11-23.19.34:940][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2016.12.11-23.19.35:067][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.12.11-23.19.36:378][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2016.12.11-23.19.37:463][  0]SourceControl: Info Source control is disabled
-[2016.12.11-23.19.38:223][  0]SourceControl: Info Source control is disabled
-[2016.12.11-23.19.38:372][  0]SourceControl: Info Source control is disabled
-[2016.12.11-23.19.38:535][  0]SourceControl: Info Source control is disabled
-[2016.12.11-23.19.42:407][  0]LogEngine: Initializing Engine...
-[2016.12.11-23.19.42:408][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2016.12.11-23.19.43:254][  0]LogAIModule: Creating AISystem for world Untitled
-[2016.12.11-23.19.43:267][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.12.11-23.19.43:290][  0]LogInit: FAudioDevice initialized.
-[2016.12.11-23.19.43:320][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Michael/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2016.12.11-23.19.43:328][  0]LogInit: Texture streaming: Enabled
-[2016.12.11-23.19.43:979][  0]LogInit: Transaction tracking system initialized
-[2016.12.11-23.19.45:167][  0]BlueprintLog: New page: Editor Load
-[2016.12.11-23.19.48:516][  0]LocalizationService: Info Localization service is disabled
-[2016.12.11-23.19.51:158][  0]LogConsoleResponse:Display: 
-[2016.12.11-23.19.52:608][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2016.12.11-23.19.52:608][  0]LogCook:Display: Mobile HDR setting 0
-[2016.12.11-23.19.53:937][  0]LogFileCache: Scanning file cache for directory '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/' took 1.01s
-[2016.12.11-23.19.56:480][  0]SourceControl: Info Source control is disabled
-[2016.12.11-23.19.56:480][  0]Cmd: MAP LOAD FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.12.11-23.19.56:499][  0]LightingResults: New page: Lighting Build
-[2016.12.11-23.19.56:647][  0]MapCheck: New page: Map Check
-[2016.12.11-23.19.56:647][  0]LightingResults: New page: Lighting Build
-[2016.12.11-23.19.58:635][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:635][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:635][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_1_Sprite.uasset.
-[2016.12.11-23.19.58:635][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:635][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_1_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:648][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:648][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:649][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_1_Sprite.uasset.
-[2016.12.11-23.19.58:649][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:649][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_1_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:667][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:668][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:668][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_2_Sprite.uasset.
-[2016.12.11-23.19.58:668][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:668][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_2_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:681][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:681][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:681][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_2_Sprite.uasset.
-[2016.12.11-23.19.58:681][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:681][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_2_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:700][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:700][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:700][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_3_Sprite.uasset.
-[2016.12.11-23.19.58:700][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:700][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_3_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:713][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:713][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:713][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_3_Sprite.uasset.
-[2016.12.11-23.19.58:713][  0]LoadErrors: Info Failed to load /Game/2DAssets/Projectile/FireballFlipbook.FireballFlipbook Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:713][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_3_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:737][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:737][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:738][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/Projectile.uasset.
-[2016.12.11-23.19.58:738][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by PaperFlipbookComponent_58
-[2016.12.11-23.19.58:738][  0]LoadErrors:Error: Error /Game/Blueprints/Projectile : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:746][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:746][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/Projectile.uasset.
-[2016.12.11-23.19.58:746][  0]LoadErrors:Error: Error /Game/Blueprints/Projectile : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:782][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:782][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/Projectile.uasset.
-[2016.12.11-23.19.58:783][  0]LoadErrors:Error: Error /Game/Blueprints/Projectile : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:904][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:905][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/Projectile.uasset.
-[2016.12.11-23.19.58:905][  0]LoadErrors:Error: Error /Game/Blueprints/Projectile : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.19.58:931][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.19.58:931][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/Projectile.uasset.
-[2016.12.11-23.19.58:931][  0]LoadErrors:Error: Error /Game/Blueprints/Projectile : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
-[2016.12.11-23.20.03:898][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.20.03:898][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_3_Sprite
-[2016.12.11-23.20.03:898][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading NULL.
-[2016.12.11-23.20.03:898][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_3_Sprite
-[2016.12.11-23.20.03:899][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.20.03:899][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_2_Sprite
-[2016.12.11-23.20.03:899][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading NULL.
-[2016.12.11-23.20.03:899][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_2_Sprite
-[2016.12.11-23.20.03:899][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
-[2016.12.11-23.20.03:899][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_1_Sprite
-[2016.12.11-23.20.03:899][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading NULL.
-[2016.12.11-23.20.03:899][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_1_Sprite
-[2016.12.11-23.20.07:000][  0]LogAIModule: Creating AISystem for world TrainingMap_1
-[2016.12.11-23.20.07:128][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.12.11-23.20.07:129][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.12.11-23.20.09:992][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 2,863.555ms to complete.
-[2016.12.11-23.20.09:993][  0]LogFileHelpers: Loading map 'TrainingMap_1' took 13.513
-[2016.12.11-23.20.10:360][  0]LogCollectionManager: Loaded 0 collections in 0.027789 seconds
-[2016.12.11-23.20.10:734][  0]LogFileCache: Scanning file cache for directory '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Saved/Collections/' took 0.06s
-[2016.12.11-23.20.10:734][  0]LogFileCache: Scanning file cache for directory '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Developers/Michael/Collections/' took 0.06s
-[2016.12.11-23.20.10:734][  0]LogFileCache: Scanning file cache for directory '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Collections/' took 0.06s
-[2016.12.11-23.20.10:734][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2016.12.11-23.20.10:750][  0]LogContentBrowser: Native class hierarchy populated in 0.0161 seconds. Added 2190 classes and 428 folders.
-[2016.12.11-23.20.10:857][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.12.11-23.20.10:857][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.12.11-23.20.10:865][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0080 seconds. Added 13 classes and 0 folders.
-[2016.12.11-23.20.11:049][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0079 seconds. Added 0 classes and 0 folders.
-[2016.12.11-23.20.11:850][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0092 seconds. Added 0 classes and 0 folders.
-[2016.12.11-23.20.12:016][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0081 seconds. Added 1 classes and 2 folders.
-[2016.12.11-23.20.12:160][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.12.11-23.20.12:169][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.12.11-23.20.12:333][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0081 seconds. Added 1 classes and 2 folders.
-[2016.12.11-23.20.12:334][  0]LogLoad: (Engine Initialization) Total time: 71.36 seconds
-[2016.12.11-23.20.12:334][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.65 seconds
-[2016.12.11-23.20.12:334][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.12.11-23.20.12:334][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.12.11-23.20.12:343][  0]LogOcInput: OculusInput pre-init called
-[2016.12.11-23.20.12:753][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.12.11-23.20.13:333][  0]LogRenderer: Reallocating scene render targets to support 1056x564 NumSamples 1 (Frame:2).
-[2016.12.11-23.20.13:819][  2]LogAssetRegistry: Asset discovery search completed in 50.2145 seconds
-[2016.12.11-23.20.13:819][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.12.11-23.20.13:819][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
-[2016.12.11-23.20.18:683][123]LogFileCache: Retrieving MD5 hashes for directory '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/' took 6.33s
-[2016.12.11-23.20.24:455][231]LogRenderer: Reallocating scene render targets to support 1336x928 NumSamples 1 (Frame:190).
-[2016.12.11-23.23.27:145][625]LogTemp: Repeting last play command: Selected Viewport
-[2016.12.11-23.23.27:192][625]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.12.11-23.23.27:193][625]PIE: New page: PIE session: TrainingMap_1 (Dec 11, 2016, 7:23:27 AM)
-[2016.12.11-23.23.27:193][625]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TrainingMap_1
-[2016.12.11-23.23.27:242][625]LogPlayLevel: PIE: StaticDuplicateObject took: (0.049089s)
-[2016.12.11-23.23.27:243][625]LogAIModule: Creating AISystem for world TrainingMap_1
-[2016.12.11-23.23.27:243][625]LogPlayLevel: PIE: World Init took: (0.000898s)
-[2016.12.11-23.23.27:243][625]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TrainingMap_1.TrainingMap_1 to /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 (0.050307s)
-[2016.12.11-23.23.27:275][625]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.12.11-23.23.27:281][625]LogInit: FAudioDevice initialized.
-[2016.12.11-23.23.27:323][625]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2016.12.11-23.23.27:333][625]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 up for play (max tick rate 0) at 2016.12.11-15.23.27
-[2016.12.11-23.23.27:334][625]LogWorld: Bringing up level for play took: 0.009802
-[2016.12.11-23.23.27:451][625]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0081 seconds. Added 11 classes and 0 folders.
-[2016.12.11-23.23.27:453][625]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.23.27:453][625]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.23.27:453][625]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.23.27:455][625]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.23.27:455][625]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TrainingMap_1 0.956
-[2016.12.11-23.24.51:718][348]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.52:509][364]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.53:445][383]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.54:332][401]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.55:220][419]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.56:101][437]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.57:038][456]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.58:271][481]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.59:063][497]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.24.59:703][510]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.25.00:542][527]LogBlueprintUserMessages: [PowerupBlockBP_C_14] Hello
-[2016.12.11-23.25.12:613][759]LogEditorViewport: Clicking on Actor (LMB): LevelStructure_C (LevelStructure6)
-[2016.12.11-23.26.56:912][561]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0084 seconds. Added 111 classes and 0 folders.
-[2016.12.11-23.27.12:000][834]LogAIModule: Creating AISystem for world NewMap
-[2016.12.11-23.27.12:008][834]LogActorComponent: RegisterComponentWithWorld: (/Game/Maps/NewMap.NewMap:PersistentLevel.WorldSettings.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
-[2016.12.11-23.27.12:163][834]Cmd: MAP LOAD FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Maps/NewMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.12.11-23.27.12:163][834]LightingResults: New page: Lighting Build
-[2016.12.11-23.27.12:164][834]LoadErrors: New page: Loading map: NewMap.umap
-[2016.12.11-23.27.12:175][834]MapCheck: New page: Map Check
-[2016.12.11-23.27.12:175][834]LightingResults: New page: Lighting Build
-[2016.12.11-23.27.12:494][834]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.12.11-23.27.12:575][834]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.12.11-23.27.17:509][834]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 4,933.902ms to complete.
-[2016.12.11-23.27.17:537][834]LogFileHelpers: Loading map 'NewMap' took 5.375
-[2016.12.11-23.32.23:766][905]LogAIModule: Creating AISystem for world OriginalTestMap
-[2016.12.11-23.32.23:775][905]LogActorComponent: RegisterComponentWithWorld: (/Game/Maps/OriginalTestMap.OriginalTestMap:PersistentLevel.WorldInfo_0.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
-[2016.12.11-23.32.23:817][905]Cmd: MAP LOAD FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Maps/OriginalTestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.12.11-23.32.23:817][905]LightingResults: New page: Lighting Build
-[2016.12.11-23.32.23:818][905]LoadErrors: New page: Loading map: OriginalTestMap.umap
-[2016.12.11-23.32.23:833][905]MapCheck: New page: Map Check
-[2016.12.11-23.32.23:833][905]LightingResults: New page: Lighting Build
-[2016.12.11-23.32.23:949][905]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.12.11-23.32.24:023][905]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.12.11-23.32.29:054][905]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 5,031.193ms to complete.
-[2016.12.11-23.32.29:055][905]LogFileHelpers: Loading map 'OriginalTestMap' took 5.240
-[2016.12.11-23.32.31:536][943]LogAIModule: Creating AISystem for world TrainingMap_1
-[2016.12.11-23.32.31:626][943]Cmd: MAP LOAD FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.12.11-23.32.31:626][943]LightingResults: New page: Lighting Build
-[2016.12.11-23.32.31:627][943]LoadErrors: New page: Loading map: TrainingMap_1.umap
-[2016.12.11-23.32.31:635][943]MapCheck: New page: Map Check
-[2016.12.11-23.32.31:635][943]LightingResults: New page: Lighting Build
-[2016.12.11-23.32.31:839][943]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.12.11-23.32.31:906][943]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.12.11-23.32.36:885][943]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 4,978.832ms to complete.
-[2016.12.11-23.32.36:886][943]LogFileHelpers: Loading map 'TrainingMap_1' took 5.261
-[2016.12.11-23.32.45:965][107]LogTemp: Repeting last play command: Selected Viewport
-[2016.12.11-23.32.46:043][107]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.12.11-23.32.46:043][107]PIE: New page: PIE session: TrainingMap_1 (Dec 11, 2016, 7:32:46 AM)
-[2016.12.11-23.32.46:043][107]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TrainingMap_1
-[2016.12.11-23.32.46:076][107]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032878s)
-[2016.12.11-23.32.46:076][107]LogAIModule: Creating AISystem for world TrainingMap_1
-[2016.12.11-23.32.46:077][107]LogPlayLevel: PIE: World Init took: (0.000703s)
-[2016.12.11-23.32.46:077][107]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TrainingMap_1.TrainingMap_1 to /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 (0.033858s)
-[2016.12.11-23.32.46:096][107]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.12.11-23.32.46:103][107]LogInit: FAudioDevice initialized.
-[2016.12.11-23.32.46:136][107]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2016.12.11-23.32.46:146][107]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 up for play (max tick rate 0) at 2016.12.11-15.32.46
-[2016.12.11-23.32.46:147][107]LogWorld: Bringing up level for play took: 0.009771
-[2016.12.11-23.32.46:147][107]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.32.46:147][107]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.32.46:147][107]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.32.46:149][107]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.32.46:149][107]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TrainingMap_1 -0.365
-[2016.12.11-23.34.52:184][403]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2016.12.11-23.34.53:881][486]LogTemp: Repeting last play command: Selected Viewport
-[2016.12.11-23.34.53:930][486]BlueprintLog: New page: Pre-Play auto-recompile
-[2016.12.11-23.34.53:955][486]LogPlayLevel: [PlayLevel] Compiling 2DSideScrollerGameMode before play...
-[2016.12.11-23.34.54:214][486]LogPlayLevel: PlayLevel: Blueprint regeneration took 284 ms (1 blueprints)
-[2016.12.11-23.34.54:214][486]PIE: New page: PIE session: TrainingMap_1 (Dec 11, 2016, 7:34:54 AM)
-[2016.12.11-23.34.54:214][486]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TrainingMap_1
-[2016.12.11-23.34.54:237][486]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022817s)
-[2016.12.11-23.34.54:238][486]LogAIModule: Creating AISystem for world TrainingMap_1
-[2016.12.11-23.34.54:238][486]LogPlayLevel: PIE: World Init took: (0.000623s)
-[2016.12.11-23.34.54:238][486]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TrainingMap_1.TrainingMap_1 to /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 (0.023652s)
-[2016.12.11-23.34.54:256][486]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.12.11-23.34.54:262][486]LogInit: FAudioDevice initialized.
-[2016.12.11-23.34.54:306][486]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2016.12.11-23.34.54:316][486]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 up for play (max tick rate 0) at 2016.12.11-15.34.54
-[2016.12.11-23.34.54:317][486]LogWorld: Bringing up level for play took: 0.010071
-[2016.12.11-23.34.54:317][486]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.34.54:317][486]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.34.54:318][486]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.34.54:319][486]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.34.54:321][486]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TrainingMap_1 -0.195
-[2016.12.11-23.35.00:533][624]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper4)
-[2016.12.11-23.35.01:918][645]LogTemp: Repeting last play command: Selected Viewport
-[2016.12.11-23.35.01:967][645]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.12.11-23.35.01:967][645]PIE: New page: PIE session: TrainingMap_1 (Dec 11, 2016, 7:35:01 AM)
-[2016.12.11-23.35.01:967][645]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TrainingMap_1
-[2016.12.11-23.35.02:013][645]LogPlayLevel: PIE: StaticDuplicateObject took: (0.045717s)
-[2016.12.11-23.35.02:014][645]LogAIModule: Creating AISystem for world TrainingMap_1
-[2016.12.11-23.35.02:014][645]LogPlayLevel: PIE: World Init took: (0.000522s)
-[2016.12.11-23.35.02:014][645]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TrainingMap_1.TrainingMap_1 to /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 (0.046487s)
-[2016.12.11-23.35.02:031][645]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.12.11-23.35.02:036][645]LogInit: FAudioDevice initialized.
-[2016.12.11-23.35.02:063][645]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2016.12.11-23.35.02:073][645]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 up for play (max tick rate 0) at 2016.12.11-15.35.02
-[2016.12.11-23.35.02:074][645]LogWorld: Bringing up level for play took: 0.009535
-[2016.12.11-23.35.02:075][645]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.35.02:075][645]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2016.12.11-23.35.02:075][645]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.35.02:076][645]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2016.12.11-23.35.02:076][645]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TrainingMap_1 -0.441
-[2016.12.11-23.35.52:137][641]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/2DSideScrollerGameMode" FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset" SILENT=true
-[2016.12.11-23.35.53:440][641]LogSavePackage: Save=526.31ms
-[2016.12.11-23.35.53:440][641]LogSavePackage: Moving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Saved/2DSideScrollerGameModeBD45DA154FC34F6C22BA39889D95DCD3.tmp' to '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.35.54:420][641]LogFileManager:Warning: DeleteFile was unable to delete '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset', retrying in .5s...
-[2016.12.11-23.35.55:880][641]LogFileManager:Error: Error deleting file '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'.
-[2016.12.11-23.35.55:883][641]LogSavePackage:Error: Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.35.55:900][641]LogSavePackage:Display: Finished SavePackage //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset
-[2016.12.11-23.36.01:369][641]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/2DSideScrollerGameMode" FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset" SILENT=true
-[2016.12.11-23.36.02:633][641]LogSavePackage: Save=518.55ms
-[2016.12.11-23.36.02:634][641]LogSavePackage: Moving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Saved/2DSideScrollerGameModeFD0D6F124364558652985E8DD8ECEFA5.tmp' to '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.36.03:610][641]LogFileManager:Warning: DeleteFile was unable to delete '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset', retrying in .5s...
-[2016.12.11-23.36.05:070][641]LogFileManager:Error: Error deleting file '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'.
-[2016.12.11-23.36.05:072][641]LogSavePackage:Error: Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.36.05:090][641]LogSavePackage:Display: Finished SavePackage //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset
-[2016.12.11-23.36.08:055][641]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/2DSideScrollerGameMode" FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset" SILENT=true
-[2016.12.11-23.36.09:322][641]LogSavePackage: Save=522.03ms
-[2016.12.11-23.36.09:322][641]LogSavePackage: Moving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Saved/2DSideScrollerGameMode070975B64AC5F39FA5909DA30C0ED320.tmp' to '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.36.10:300][641]LogFileManager:Warning: DeleteFile was unable to delete '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset', retrying in .5s...
-[2016.12.11-23.36.11:760][641]LogFileManager:Error: Error deleting file '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'.
-[2016.12.11-23.36.11:763][641]LogSavePackage:Error: Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.36.11:781][641]LogSavePackage:Display: Finished SavePackage //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset
-[2016.12.11-23.36.37:053][641]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/2DSideScrollerGameMode" FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset" SILENT=true
-[2016.12.11-23.36.38:368][641]LogSavePackage: Save=514.77ms
-[2016.12.11-23.36.38:368][641]LogSavePackage: Moving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Saved/2DSideScrollerGameMode4370BA344630EC81C974B895494553E8.tmp' to '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.36.39:350][641]LogFileManager:Warning: DeleteFile was unable to delete '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset', retrying in .5s...
-[2016.12.11-23.36.40:810][641]LogFileManager:Error: Error deleting file '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'.
-[2016.12.11-23.36.40:812][641]LogSavePackage:Error: Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.36.40:830][641]LogSavePackage:Display: Finished SavePackage //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset
-[2016.12.11-23.37.10:165][641]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/2DSideScrollerGameMode" FILE="//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset" SILENT=true
-[2016.12.11-23.37.12:222][641]LogSavePackage: Save=785.57ms
-[2016.12.11-23.37.12:222][641]LogSavePackage: Moving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Saved/2DSideScrollerGameMode95E633F943EF51C640E072BD1E13234D.tmp' to '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.37.12:418][641]LogSavePackage:Display: Finished SavePackage //192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset
-[2016.12.11-23.37.12:430][641]EditorErrors: New page: Save Output
-[2016.12.11-23.37.12:430][641]EditorErrors:Warning: Warning Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.37.12:430][641]EditorErrors:Warning: Warning Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.37.12:430][641]EditorErrors:Warning: Warning Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
-[2016.12.11-23.37.12:430][641]EditorErrors:Warning: Warning Error saving '//192.168.0.151/Projects/_Unreal_Projects/UnrealStickFigure2D/Content/Blueprints/2DSideScrollerGameMode.uasset'
+[2016.12.12-19.37.01:321][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.12-19.37.01:321][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.12.12-19.37.01:344][  0]LogInit: Computer: THO-TC-LEN013
+[2016.12.12-19.37.01:344][  0]LogInit: User: mholtz
+[2016.12.12-19.37.01:344][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.12.12-19.37.01:344][  0]LogInit: High frequency timer resolution =2.728212 MHz
+[2016.12.12-19.37.01:344][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.12.12-19.37.01:344][  0]LogMemory: Platform Memory Stats for Windows
+[2016.12.12-19.37.01:344][  0]LogMemory: Process Physical Memory: 265.86 MB used, 265.86 MB peak
+[2016.12.12-19.37.01:344][  0]LogMemory: Process Virtual Memory: 266.09 MB used, 266.09 MB peak
+[2016.12.12-19.37.01:344][  0]LogMemory: Physical Memory: 4258.81 MB used,  12030.31 MB free, 16289.13 MB total
+[2016.12.12-19.37.01:344][  0]LogMemory: Virtual Memory: 681.16 MB used,  12030.31 MB free, 8388608.00 MB total
+[2016.12.12-19.37.01:558][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.12.12-19.37.02:858][  0]LogD3D11RHI: D3D11 adapters:
+[2016.12.12-19.37.02:873][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2016.12.12-19.37.02:873][  0]LogD3D11RHI:       2214/0/7888 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x8086
+[2016.12.12-19.37.02:873][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.12.12-19.37.02:879][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.12.12-19.37.02:879][  0]LogD3D11RHI:     GPU DeviceId: 0x416 (for the marketing name, search the web for "GPU Device Id")
+[2016.12.12-19.37.02:879][  0]LogWindows: EnumDisplayDevices:
+[2016.12.12-19.37.02:879][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2016.12.12-19.37.02:879][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:1)
+[2016.12.12-19.37.02:880][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:1)
+[2016.12.12-19.37.02:880][  0]LogWindows:    3. 'RDPDD Chained DD' (P:0 D:0)
+[2016.12.12-19.37.02:880][  0]LogWindows:    4. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.12.12-19.37.02:880][  0]LogWindows:    5. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.12.12-19.37.02:880][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:3 
+[2016.12.12-19.37.02:880][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics 4600
+[2016.12.12-19.37.02:880][  0]LogD3D11RHI:   Driver Version: 10.18.14.4280 (internal:10.18.14.4280, unified:10.18.14.4280)
+[2016.12.12-19.37.02:880][  0]LogD3D11RHI:      Driver Date: 8-28-2015
+[2016.12.12-19.37.02:880][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.12.12-19.37.02:894][  0]LogD3D11RHI: Async texture creation enabled
+[2016.12.12-19.37.02:902][  0]LogD3D11RHI: GPU Timing Frequency: 12.500000 (Debug: 2 0)
+[2016.12.12-19.37.02:902][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Intermediate/Shaders/WorkingDirectory/9564/).
+[2016.12.12-19.37.02:902][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/mholtz/AppData/Local/Temp/UnrealShaderWorkingDir/604AFDA04BAA4906AB3EFBB195C9F189/'.
+[2016.12.12-19.37.02:902][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.12.12-19.37.05:160][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.12.12-19.37.05:256][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2016.12.12-19.37.05:352][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2016.12.12-19.37.05:439][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2016.12.12-19.37.05:532][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2016.12.12-19.37.05:632][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.12.12-19.37.05:727][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.12.12-19.37.05:828][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.12.12-19.37.05:918][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.12.12-19.37.06:015][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.12.12-19.37.06:104][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.12.12-19.37.06:189][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.12.12-19.37.06:279][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.12.12-19.37.06:376][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.12.12-19.37.06:462][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.12.12-19.37.06:649][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.12.12-19.37.06:649][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.12.12-19.37.06:719][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.12.12-19.37.06:863][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.12.12-19.37.06:896][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.12.12-19.37.06:993][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2016.12.12-19.37.07:093][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.12.12-19.37.07:187][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.12.12-19.37.07:283][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.12.12-19.37.07:283][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.12.12-19.37.07:969][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.12.12-19.37.08:659][  0]LogDerivedDataCache: Loaded boot cache 0.69s 50MB C:/Users/mholtz/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2016.12.12-19.37.08:659][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/mholtz/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
+[2016.12.12-19.37.08:660][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.12.12-19.37.08:660][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.12.12-19.37.08:660][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.12.12-19.37.08:660][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.12.12-19.37.08:696][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.12.12-19.37.08:711][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mholtz/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.12.12-19.37.10:824][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.12-19.37.10:827][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.12.12-19.37.11:126][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2016.12.12-19.37.11:222][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2016.12.12-19.37.11:301][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2016.12.12-19.37.11:301][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2016.12.12-19.37.11:301][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.12.12-19.37.12:138][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: unrealstickfigure2d, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2893249720
+[2016.12.12-19.37.12:194][  0]LogAssetRegistry: FAssetRegistry took 0.0204 seconds to start up
+[2016.12.12-19.37.12:253][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.039233 seconds
+[2016.12.12-19.37.12:259][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
+[2016.12.12-19.37.12:259][  0]LogUObjectAllocator: 6935840 out of 0 bytes used by permanent object pool.
+[2016.12.12-19.37.12:259][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.12.12-19.37.12:316][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.12.12-19.37.13:468][  0]LogSlate: Using Freetype 2.6.0
+[2016.12.12-19.37.13:471][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.12-19.37.13:471][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.12-19.37.15:960][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2016.12.12-19.37.15:999][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.12.12-19.37.16:572][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.12.12-19.37.17:263][  0]SourceControl: Info Source control is disabled
+[2016.12.12-19.37.17:395][  0]SourceControl: Info Source control is disabled
+[2016.12.12-19.37.17:474][  0]SourceControl: Info Source control is disabled
+[2016.12.12-19.37.17:550][  0]SourceControl: Info Source control is disabled
+[2016.12.12-19.37.18:012][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part1-Overview'
+[2016.12.12-19.37.18:012][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part1-Overview'
+[2016.12.12-19.37.18:012][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part1-Overview.Part1-Overview_C'
+[2016.12.12-19.37.18:012][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part2-BlockBlueprint'
+[2016.12.12-19.37.18:012][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part2-BlockBlueprint'
+[2016.12.12-19.37.18:012][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part2-BlockBlueprint.Part2-BlockBlueprint_C'
+[2016.12.12-19.37.19:662][  0]LogEngine: Initializing Engine...
+[2016.12.12-19.37.19:664][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2016.12.12-19.37.20:016][  0]LogAIModule: Creating AISystem for world Untitled
+[2016.12.12-19.37.20:038][  0]LogInit: XAudio2 using 'Headphone (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.12-19.37.20:136][  0]LogInit: FAudioDevice initialized.
+[2016.12.12-19.37.20:168][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/mholtz/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2016.12.12-19.37.20:174][  0]LogInit: Texture streaming: Enabled
+[2016.12.12-19.37.20:458][  0]LogInit: Transaction tracking system initialized
+[2016.12.12-19.37.21:008][  0]BlueprintLog: New page: Editor Load
+[2016.12.12-19.37.22:304][  0]LocalizationService: Info Localization service is disabled
+[2016.12.12-19.37.23:305][  0]LogConsoleResponse:Display: 
+[2016.12.12-19.37.23:503][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2016.12.12-19.37.23:503][  0]LogCook:Display: Mobile HDR setting 0
+[2016.12.12-19.37.24:223][  0]LogFileCache: Scanning file cache for directory 'C:/projects/Unreal Projects/UnrealStickFigure2D/Content/' took 0.02s
+[2016.12.12-19.37.25:075][  0]SourceControl: Info Source control is disabled
+[2016.12.12-19.37.25:075][  0]Cmd: MAP LOAD FILE="../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.12.12-19.37.25:076][  0]LightingResults: New page: Lighting Build
+[2016.12.12-19.37.25:157][  0]MapCheck: New page: Map Check
+[2016.12.12-19.37.25:157][  0]LightingResults: New page: Lighting Build
+[2016.12.12-19.37.25:356][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:356][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Blueprints/Projectile.uasset.
+[2016.12.12-19.37.25:356][  0]LoadErrors:Error: Error /Game/Blueprints/Projectile : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:358][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:358][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_1_Sprite.uasset.
+[2016.12.12-19.37.25:358][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_1_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:359][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:359][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_1_Sprite.uasset.
+[2016.12.12-19.37.25:359][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_1_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:360][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:360][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_2_Sprite.uasset.
+[2016.12.12-19.37.25:360][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_2_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:361][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:361][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_2_Sprite.uasset.
+[2016.12.12-19.37.25:361][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_2_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:362][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:362][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_3_Sprite.uasset.
+[2016.12.12-19.37.25:363][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_3_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:363][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:363][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Projectile/Fireball_3_Sprite.uasset.
+[2016.12.12-19.37.25:364][  0]LoadErrors:Error: Error /Game/2DAssets/Projectile/Fireball_3_Sprite : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:369][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:369][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Blueprints/Projectile.uasset.
+[2016.12.12-19.37.25:369][  0]LoadErrors:Error: Error /Game/Blueprints/Projectile : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:374][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:374][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by PaperFlipbookComponent_58
+[2016.12.12-19.37.25:374][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Blueprints/Enemies/DeadlyPotato.uasset.
+[2016.12.12-19.37.25:374][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by PaperFlipbookComponent_58
+[2016.12.12-19.37.25:374][  0]LoadErrors:Error: Error /Game/Blueprints/Enemies/DeadlyPotato : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:375][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:375][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Blueprints/Enemies/DeadlyPotato.uasset.
+[2016.12.12-19.37.25:375][  0]LoadErrors:Error: Error /Game/Blueprints/Enemies/DeadlyPotato : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:375][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:375][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Blueprints/Enemies/DeadlyPotato.uasset.
+[2016.12.12-19.37.25:375][  0]LoadErrors:Error: Error /Game/Blueprints/Enemies/DeadlyPotato : Can't find file for asset. /Paper2D/TranslucentUnlitSpriteMaterial
+[2016.12.12-19.37.25:906][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:906][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap.
+[2016.12.12-19.37.25:906][  0]LoadErrors:Error: Error /Game/Maps/TrainingMap_1 : Can't find file for asset. /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5
+[2016.12.12-19.37.25:906][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6'
+[2016.12.12-19.37.25:906][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap.
+[2016.12.12-19.37.25:906][  0]LoadErrors:Error: Error /Game/Maps/TrainingMap_1 : Can't find file for asset. /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6
+[2016.12.12-19.37.25:910][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/SilverScrews_Sprite'
+[2016.12.12-19.37.25:910][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/SilverScrews_Sprite' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap.
+[2016.12.12-19.37.25:910][  0]LoadErrors:Error: Error /Game/Maps/TrainingMap_1 : Can't find file for asset. /Game/2DAssets/Level/SilverScrews_Sprite
+[2016.12.12-19.37.25:911][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:911][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap.
+[2016.12.12-19.37.25:911][  0]LoadErrors:Error: Error /Game/Maps/TrainingMap_1 : Can't find file for asset. /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5
+[2016.12.12-19.37.25:911][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6'
+[2016.12.12-19.37.25:911][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap.
+[2016.12.12-19.37.25:911][  0]LoadErrors:Error: Error /Game/Maps/TrainingMap_1 : Can't find file for asset. /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6
+[2016.12.12-19.37.25:911][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/SilverScrews_Sprite'
+[2016.12.12-19.37.25:911][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/SilverScrews_Sprite' while loading ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap.
+[2016.12.12-19.37.25:911][  0]LoadErrors:Error: Error /Game/Maps/TrainingMap_1 : Can't find file for asset. /Game/2DAssets/Level/SilverScrews_Sprite
+[2016.12.12-19.37.25:946][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:946][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_2_Sprite
+[2016.12.12-19.37.25:947][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading NULL.
+[2016.12.12-19.37.25:947][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_2_Sprite
+[2016.12.12-19.37.25:947][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:947][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_1_Sprite
+[2016.12.12-19.37.25:947][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading NULL.
+[2016.12.12-19.37.25:947][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_1_Sprite
+[2016.12.12-19.37.25:954][  0]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.37.25:954][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_3_Sprite
+[2016.12.12-19.37.25:954][  0]LogLinker:Warning: Can't find file for asset '/Paper2D/TranslucentUnlitSpriteMaterial' while loading NULL.
+[2016.12.12-19.37.25:954][  0]LoadErrors: Info Failed to load /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial Referenced by Fireball_3_Sprite
+[2016.12.12-19.37.25:969][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:969][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:969][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading NULL.
+[2016.12.12-19.37.25:969][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:969][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:969][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:969][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading NULL.
+[2016.12.12-19.37.25:969][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:970][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:970][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:970][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading NULL.
+[2016.12.12-19.37.25:970][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:970][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6'
+[2016.12.12-19.37.25:970][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6.MarioTiles_Sprite_6 Referenced by RenderComponent
+[2016.12.12-19.37.25:970][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6' while loading NULL.
+[2016.12.12-19.37.25:970][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_6.MarioTiles_Sprite_6 Referenced by RenderComponent
+[2016.12.12-19.37.25:971][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:971][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:971][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading NULL.
+[2016.12.12-19.37.25:971][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:971][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:971][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:971][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading NULL.
+[2016.12.12-19.37.25:971][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:971][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:971][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:971][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading NULL.
+[2016.12.12-19.37.25:971][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:972][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5'
+[2016.12.12-19.37.25:972][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:972][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5' while loading NULL.
+[2016.12.12-19.37.25:972][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/MarioBlocks/MarioTiles_Sprite_5.MarioTiles_Sprite_5 Referenced by RenderComponent
+[2016.12.12-19.37.25:972][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/SilverScrews_Sprite'
+[2016.12.12-19.37.25:972][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/SilverScrews_Sprite.SilverScrews_Sprite Referenced by RenderComponent
+[2016.12.12-19.37.25:972][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/SilverScrews_Sprite' while loading NULL.
+[2016.12.12-19.37.25:972][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/SilverScrews_Sprite.SilverScrews_Sprite Referenced by RenderComponent
+[2016.12.12-19.37.25:972][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/SilverScrews_Sprite'
+[2016.12.12-19.37.25:973][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/SilverScrews_Sprite.SilverScrews_Sprite Referenced by RenderComponent
+[2016.12.12-19.37.25:973][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/SilverScrews_Sprite' while loading NULL.
+[2016.12.12-19.37.25:973][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/SilverScrews_Sprite.SilverScrews_Sprite Referenced by RenderComponent
+[2016.12.12-19.37.25:973][  0]LogLinker:Warning: Can't find file '/Game/2DAssets/Level/SilverScrews_Sprite'
+[2016.12.12-19.37.25:973][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/SilverScrews_Sprite.SilverScrews_Sprite Referenced by RenderComponent
+[2016.12.12-19.37.25:973][  0]LogLinker:Warning: Can't find file for asset '/Game/2DAssets/Level/SilverScrews_Sprite' while loading NULL.
+[2016.12.12-19.37.25:973][  0]LoadErrors: Info Failed to load /Game/2DAssets/Level/SilverScrews_Sprite.SilverScrews_Sprite Referenced by RenderComponent
+[2016.12.12-19.37.28:445][  0]LogAIModule: Creating AISystem for world TrainingMap_1
+[2016.12.12-19.37.28:534][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.12.12-19.37.28:534][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.12.12-19.37.28:811][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 276.9ms to complete.
+[2016.12.12-19.37.28:812][  0]LogFileHelpers: Loading map 'TrainingMap_1' took 3.737
+[2016.12.12-19.37.28:990][  0]LogCollectionManager: Loaded 0 collections in 0.001873 seconds
+[2016.12.12-19.37.29:169][  0]LogFileCache: Scanning file cache for directory 'C:/projects/Unreal Projects/UnrealStickFigure2D/Saved/Collections/' took 0.01s
+[2016.12.12-19.37.29:169][  0]LogFileCache: Scanning file cache for directory 'C:/projects/Unreal Projects/UnrealStickFigure2D/Content/Developers/mholtz/Collections/' took 0.01s
+[2016.12.12-19.37.29:169][  0]LogFileCache: Scanning file cache for directory 'C:/projects/Unreal Projects/UnrealStickFigure2D/Content/Collections/' took 0.01s
+[2016.12.12-19.37.29:169][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.12.12-19.37.29:177][  0]LogContentBrowser: Native class hierarchy populated in 0.0078 seconds. Added 2190 classes and 428 folders.
+[2016.12.12-19.37.29:257][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.12.12-19.37.29:257][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.12.12-19.37.29:258][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0006 seconds. Added 13 classes and 0 folders.
+[2016.12.12-19.37.29:356][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2016.12.12-19.37.29:570][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.12.12-19.37.29:641][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.12.12-19.37.29:644][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.12.12-19.37.29:748][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.12.12-19.37.29:748][  0]LogLoad: (Engine Initialization) Total time: 31.67 seconds
+[2016.12.12-19.37.29:748][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.40 seconds
+[2016.12.12-19.37.29:748][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.12.12-19.37.29:748][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.12.12-19.37.29:765][  0]LogOcInput: OculusInput pre-init called
+[2016.12.12-19.37.29:783][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.12.12-19.37.29:967][  0]LogRenderer: Reallocating scene render targets to support 764x664 NumSamples 1 (Frame:2).
+[2016.12.12-19.37.30:442][  1]LogAssetRegistry: Asset discovery search completed in 18.2691 seconds
+[2016.12.12-19.37.30:442][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.12.12-19.37.30:442][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000014 seconds (updated 0 objects)
+[2016.12.12-19.38.24:662][253]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/ExternalImages/LoaderSketch.png)
+[2016.12.12-19.38.24:680][253]LogTexture:Display: Building textures: LoaderSketch (BGRA8)
+[2016.12.12-19.39.00:664][370]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.39.00:664][370]LogUObjectGlobals:Warning: Failed to find object 'Object /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.39.00:664][370]LogPaper2DEditor:Warning: Failed to load material specified in Paper2D import settings (unlit 3)
+[2016.12.12-19.39.00:741][370]LogLinker:Warning: Can't find file '/Paper2D/TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.39.00:741][370]LogUObjectGlobals:Warning: Failed to find object 'Object /Paper2D/TranslucentUnlitSpriteMaterial.TranslucentUnlitSpriteMaterial'
+[2016.12.12-19.39.00:741][370]LogPaper2DEditor:Warning: Failed to load material specified in Paper2D import settings (unlit 3)
+[2016.12.12-19.39.16:162][243]LogRenderer: Reallocating scene render targets to support 1528x928 NumSamples 1 (Frame:22).
+[2016.12.12-19.41.44:492][932]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/2DAssets/Level/LoadBlock/LoadBlock" FILE="../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoadBlock.uasset" SILENT=true
+[2016.12.12-19.41.44:505][932]LogSavePackage: Save=7.53ms
+[2016.12.12-19.41.44:505][932]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoadBlockCBB3D36D44AC194ED7EAC2BFA959609B.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoadBlock.uasset'
+[2016.12.12-19.41.44:509][932]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoadBlock.uasset
+[2016.12.12-19.41.59:928][732]LogTemp: Repeting last play command: Selected Viewport
+[2016.12.12-19.41.59:946][732]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.12-19.41.59:946][732]PIE: New page: PIE session: TrainingMap_1 (Dec 12, 2016, 3:41:59 AM)
+[2016.12.12-19.41.59:946][732]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TrainingMap_1
+[2016.12.12-19.41.59:962][732]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016101s)
+[2016.12.12-19.41.59:962][732]LogAIModule: Creating AISystem for world TrainingMap_1
+[2016.12.12-19.41.59:963][732]LogPlayLevel: PIE: World Init took: (0.000556s)
+[2016.12.12-19.41.59:963][732]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TrainingMap_1.TrainingMap_1 to /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 (0.016864s)
+[2016.12.12-19.41.59:974][732]LogInit: XAudio2 using 'Headphone (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.12-19.41.59:986][732]LogInit: FAudioDevice initialized.
+[2016.12.12-19.42.00:031][732]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2016.12.12-19.42.00:037][732]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 up for play (max tick rate 60) at 2016.12.12-11.42.00
+[2016.12.12-19.42.00:038][732]LogWorld: Bringing up level for play took: 0.006586
+[2016.12.12-19.42.00:101][732]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2016.12.12-19.42.00:101][732]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2016.12.12-19.42.00:101][732]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2016.12.12-19.42.00:101][732]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2016.12.12-19.42.00:103][732]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2016.12.12-19.42.00:103][732]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TrainingMap_1 0.043
+[2016.12.12-19.42.35:410][360]LogTemp: Repeting last play command: Selected Viewport
+[2016.12.12-19.42.35:423][360]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.12-19.42.35:423][360]PIE: New page: PIE session: TrainingMap_1 (Dec 12, 2016, 3:42:35 AM)
+[2016.12.12-19.42.35:423][360]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TrainingMap_1
+[2016.12.12-19.42.35:440][360]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016414s)
+[2016.12.12-19.42.35:440][360]LogAIModule: Creating AISystem for world TrainingMap_1
+[2016.12.12-19.42.35:440][360]LogPlayLevel: PIE: World Init took: (0.000522s)
+[2016.12.12-19.42.35:440][360]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TrainingMap_1.TrainingMap_1 to /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 (0.017139s)
+[2016.12.12-19.42.35:452][360]LogInit: XAudio2 using 'Headphone (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.12-19.42.35:463][360]LogInit: FAudioDevice initialized.
+[2016.12.12-19.42.35:492][360]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2016.12.12-19.42.35:499][360]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 up for play (max tick rate 60) at 2016.12.12-11.42.35
+[2016.12.12-19.42.35:500][360]LogWorld: Bringing up level for play took: 0.006737
+[2016.12.12-19.42.35:500][360]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2016.12.12-19.42.35:500][360]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2016.12.12-19.42.35:500][360]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2016.12.12-19.42.35:502][360]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2016.12.12-19.42.35:502][360]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TrainingMap_1 -0.558
+[2016.12.12-19.42.40:744][594]LogCharacterMovement: MyCharacter_C_0 is stuck and failed to move! Velocity: X=835.74 Y=0.00 Z=0.00 Location: X=-1993.02 Y=0.00 Z=4988.65 Normal: X=0.00 Y=0.00 Z=1.00 PenetrationDepth:7.351 Actor:LevelStructure2_1611 Component:NODE_AddBoxComponent-0_15 BoneName:None (0 other events since notify)
+[2016.12.12-19.42.42:046][655]LogCharacterMovement: MyCharacter_C_0 is stuck and failed to move! Velocity: X=-43.91 Y=0.00 Z=0.00 Location: X=-1993.04 Y=0.00 Z=4988.82 Normal: X=0.00 Y=0.00 Z=1.00 PenetrationDepth:7.182 Actor:LevelStructure2_1611 Component:NODE_AddBoxComponent-0_15 BoneName:None (4 other events since notify)
+[2016.12.12-19.43.11:776][ 62]LogTemp: Repeting last play command: Selected Viewport
+[2016.12.12-19.43.11:790][ 62]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.12-19.43.11:790][ 62]PIE: New page: PIE session: TrainingMap_1 (Dec 12, 2016, 3:43:11 AM)
+[2016.12.12-19.43.11:790][ 62]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TrainingMap_1
+[2016.12.12-19.43.11:807][ 62]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017367s)
+[2016.12.12-19.43.11:808][ 62]LogAIModule: Creating AISystem for world TrainingMap_1
+[2016.12.12-19.43.11:808][ 62]LogPlayLevel: PIE: World Init took: (0.000560s)
+[2016.12.12-19.43.11:808][ 62]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TrainingMap_1.TrainingMap_1 to /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 (0.018161s)
+[2016.12.12-19.43.11:821][ 62]LogInit: XAudio2 using 'Headphone (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.12-19.43.11:830][ 62]LogInit: FAudioDevice initialized.
+[2016.12.12-19.43.11:859][ 62]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2016.12.12-19.43.11:867][ 62]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TrainingMap_1.TrainingMap_1 up for play (max tick rate 60) at 2016.12.12-11.43.11
+[2016.12.12-19.43.11:868][ 62]LogWorld: Bringing up level for play took: 0.008193
+[2016.12.12-19.43.11:868][ 62]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2016.12.12-19.43.11:868][ 62]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2016.12.12-19.43.11:868][ 62]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2016.12.12-19.43.11:869][ 62]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2016.12.12-19.43.11:870][ 62]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TrainingMap_1 -0.19
+[2016.12.12-19.43.28:362][924]LogEditorViewport: Clicking on Actor (LMB): PaperFlipbookActor (LoadBlock)
+[2016.12.12-19.44.17:297][378]LogEditorViewport: Clicking on Actor (LMB): PaperFlipbookActor (LoadBlock)
+[2016.12.12-19.44.41:537][666]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper4)
+[2016.12.12-19.44.45:899][902]LogEditorViewport: Clicking on Actor (LMB): PaperFlipbookActor (LoadBlock)
+[2016.12.12-19.44.55:203][431]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/TrainingMap_1" FILE="../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.12.12-19.44.55:382][431]LogSavePackage: Save=160.57ms
+[2016.12.12-19.44.55:382][431]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/TrainingMap_1E21533584A3B8F8FC6B6449882686BCC.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap'
+[2016.12.12-19.44.55:387][431]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1.umap
+[2016.12.12-19.44.55:413][431]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/TrainingMap_1_BuiltData" FILE="../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1_BuiltData.uasset" SILENT=true
+[2016.12.12-19.44.55:424][431]LogSavePackage: Save=2.65ms
+[2016.12.12-19.44.55:424][431]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/TrainingMap_1_BuiltData7CD38F2244DF9F17A6714DBFF1BCBF3C.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1_BuiltData.uasset'
+[2016.12.12-19.44.55:425][431]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/Maps/TrainingMap_1_BuiltData.uasset
+[2016.12.12-19.44.59:040][646]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper4)
+[2016.12.12-19.45.00:122][705]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper4)
+[2016.12.12-19.45.01:745][799]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper4)
+[2016.12.12-19.45.03:126][878]Cmd: SELECT NONE
+[2016.12.12-19.45.03:619][906]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper4)
+[2016.12.12-19.45.06:810][ 93]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper2)
+[2016.12.12-19.45.07:567][133]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Paper4)
+[2016.12.12-19.45.23:074][ 12]LogEditorViewport: Clicking on Actor (LMB): PaperFlipbookActor (LoadBlock)
+[2016.12.12-19.45.27:053][244]LogEditorViewport: Clicking on Actor (LMB): PowerupBlockBP_C (PowerupBlockBP2)
+[2016.12.12-19.46.21:788][118]LogSavePackage: Save=37.78ms
+[2016.12.12-19.46.21:788][118]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoaderSketch5C8A29244BAD3B4B902F3580784D923F.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch.uasset'
+[2016.12.12-19.46.21:792][118]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch.uasset
+[2016.12.12-19.46.21:814][118]LogSavePackage: Save=6.25ms
+[2016.12.12-19.46.21:814][118]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoaderSketch_LoadBlock_0AC77E6B64BE510CE966CAFBBA2672AE4.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_0.uasset'
+[2016.12.12-19.46.21:817][118]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_0.uasset
+[2016.12.12-19.46.21:837][118]LogSavePackage: Save=6.30ms
+[2016.12.12-19.46.21:837][118]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoaderSketch_LoadBlock_21EECEEFA426803ACFD239F80E31D16AC.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_2.uasset'
+[2016.12.12-19.46.21:841][118]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_2.uasset
+[2016.12.12-19.46.21:863][118]LogSavePackage: Save=7.85ms
+[2016.12.12-19.46.21:864][118]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoaderSketch_LoadBlock_3520957664BD3F8922D72D49EC1E92566.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_3.uasset'
+[2016.12.12-19.46.21:868][118]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_3.uasset
+[2016.12.12-19.46.21:889][118]LogSavePackage: Save=6.20ms
+[2016.12.12-19.46.21:889][118]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoaderSketch_LoadBlock_40055CB9E40F1A60FB4D1EB9ADFEABAAF.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_4.uasset'
+[2016.12.12-19.46.21:892][118]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_4.uasset
+[2016.12.12-19.46.21:916][118]LogSavePackage: Save=8.38ms
+[2016.12.12-19.46.21:916][118]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoaderSketch_LoadBlock_5F9D726CF440534A5D4F344B313782A9E.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_5.uasset'
+[2016.12.12-19.46.21:919][118]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_5.uasset
+[2016.12.12-19.46.21:946][118]LogSavePackage: Save=6.74ms
+[2016.12.12-19.46.21:946][118]LogSavePackage: Moving '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Saved/LoaderSketch_LoadBlock_66ADCC85D43592CDF994B0CBE02B687CB.tmp' to '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_6.uasset'
+[2016.12.12-19.46.21:951][118]LogSavePackage:Display: Finished SavePackage ../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/2DAssets/Level/LoadBlock/LoaderSketch_LoadBlock_6.uasset
+[2016.12.12-19.46.22:166][119]Cmd: QUIT_EDITOR
+[2016.12.12-19.46.22:245][119]LogExit: Preparing to exit.
+[2016.12.12-19.46.23:124][119]LogDirectoryWatcher: A directory notification for 'C:/projects/Unreal Projects/UnrealStickFigure2D/Content/' was aborted.
+[2016.12.12-19.46.23:148][119]LogExit: Editor shut down
+[2016.12.12-19.46.23:149][119]LogExit: Transaction tracking system shut down
+[2016.12.12-19.46.23:197][119]LogObj: Freed 0b from 0 cluster array pools.
+[2016.12.12-19.46.23:198][119]LogExit: Object subsystem successfully closed.
+[2016.12.12-19.46.23:216][119]LogD3D11RHI: Shutdown
+[2016.12.12-19.46.23:216][119]LogD3D11RHI: CleanupD3DDevice
+[2016.12.12-19.46.23:299][119]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.12.12-19.46.23:313][119]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2016.12.12-19.46.23:313][119]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BA8EE4EF5-4674-C1B0-E412-A6B8B4A6AD0F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.0-3195953%2B%2B%2BUE4%2BRelease-4.14&UserID=eeb596c4402707c146aaacaee6b31e40%7C96adf8e2f188487abcab3fb8711cecfc%7Ce065d823-99bb-4e86-99e1-0cff48069a5d&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2016.12.12-19.46.23:332][119]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (241)
+[2016.12.12-19.46.23:332][119]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (240)
+[2016.12.12-19.46.23:332][119]LogModuleManager: Shutting down and abandoning module CrashTracker (239)
+[2016.12.12-19.46.23:332][119]LogModuleManager: Shutting down and abandoning module WidgetCarousel (238)
+[2016.12.12-19.46.23:332][119]LogModuleManager: Shutting down and abandoning module AddContentDialog (237)
+[2016.12.12-19.46.23:332][119]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.14/FeaturePacks/' was aborted.
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module GameplayTags (236)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module EditorWidgets (235)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module CollectionManager (234)
+[2016.12.12-19.46.23:334][119]LogDirectoryWatcher: A directory notification for 'C:/projects/Unreal Projects/UnrealStickFigure2D/Content/Collections/' was aborted.
+[2016.12.12-19.46.23:334][119]LogDirectoryWatcher: A directory notification for 'C:/projects/Unreal Projects/UnrealStickFigure2D/Content/Developers/mholtz/Collections/' was aborted.
+[2016.12.12-19.46.23:334][119]LogDirectoryWatcher: A directory notification for 'C:/projects/Unreal Projects/UnrealStickFigure2D/Saved/Collections/' was aborted.
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module StatsViewer (233)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module FoliageEdit (232)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module LandscapeEditor (231)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (230)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module ActorPickerMode (229)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module GeometryMode (228)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module TextureAlignMode (227)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module BspMode (226)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module HardwareSurvey (225)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (224)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module AutomationWorker (223)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (222)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module PlacementMode (221)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (220)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (219)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (218)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (217)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (216)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module Media (215)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (214)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (213)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module CharacterAI (212)
+[2016.12.12-19.46.23:334][119]LogModuleManager: Shutting down and abandoning module SequenceRecorder (211)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module AudioCapture (210)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module SmartSnapping (209)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module SessionServices (208)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module ViewportSnapping (207)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module ViewportInteraction (206)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module LogVisualizer (205)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (204)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module IntroTutorials (203)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (202)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (201)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (200)
+[2016.12.12-19.46.23:335][119]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (199)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (198)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (197)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (196)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module InputBindingEditor (195)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module NiagaraEditor (194)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module MergeActors (193)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module SizeMap (192)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module TreeMap (191)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module ReferenceViewer (190)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module LocalizationService (189)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (188)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module HardwareTargeting (187)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (186)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module UndoHistory (185)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module UserFeedback (184)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module XmlParser (183)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module Blutility (182)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (181)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (180)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (179)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module SettingsEditor (178)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module ProjectLauncher (177)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module SessionFrontend (176)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module ProfilerClient (175)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (174)
+[2016.12.12-19.46.23:834][119]LogModuleManager: Shutting down and abandoning module DeviceManager (173)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module AutomationController (172)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module AutomationWindow (171)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module Layers (170)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (169)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module DetailCustomizations (168)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module PackagesDialog (167)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module AnimGraph (166)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module Persona (165)
+[2016.12.12-19.46.23:875][119]LogModuleManager: Shutting down and abandoning module Kismet (164)
+[2016.12.12-19.46.23:876][119]LogModuleManager: Shutting down and abandoning module GraphEditor (163)
+[2016.12.12-19.46.23:876][119]LogModuleManager: Shutting down and abandoning module ClassViewer (162)
+[2016.12.12-19.46.23:876][119]LogModuleManager: Shutting down and abandoning module Toolbox (161)
+[2016.12.12-19.46.23:876][119]LogModuleManager: Shutting down and abandoning module ModuleUI (160)
+[2016.12.12-19.46.23:876][119]LogModuleManager: Shutting down and abandoning module MovieSceneTools (159)
+[2016.12.12-19.46.23:876][119]LogModuleManager: Shutting down and abandoning module OutputLog (158)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module GammaUI (157)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module Documentation (156)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module Niagara (155)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (154)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module AnalyticsET (153)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module PortalServices (152)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module PortalRpc (151)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module MessagingRpc (150)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module GameplayDebugger (149)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module AITestSuite (148)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module AIModule (147)
+[2016.12.12-19.46.23:877][119]LogModuleManager: Shutting down and abandoning module ProfilerService (146)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module TaskGraph (145)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SlateRemote (144)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SteamVRController (143)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SteamVR (142)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (141)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (140)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module OculusLibrary (139)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module OculusInput (138)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (137)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (136)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module CableComponent (135)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (134)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (132)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module HTML5Networking (131)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (130)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module GeometryCache (129)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module AlembicLibrary (128)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module AlembicImporter (127)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SuperSearch (126)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (125)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (124)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module PluginBrowser (123)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (122)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module EpicSurvey (121)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module DesktopPlatform (120)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (119)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module UObjectPlugin (118)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (117)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (116)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module SourceControl (115)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module GitSourceControl (114)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (113)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (112)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (111)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module MeshPaint (110)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (109)
+[2016.12.12-19.46.23:891][119]LogModuleManager: Shutting down and abandoning module HotReload (108)
+[2016.12.12-19.46.23:892][119]LogModuleManager: Shutting down and abandoning module MainFrame (107)
+[2016.12.12-19.46.23:892][119]LogModuleManager: Shutting down and abandoning module LevelEditor (106)
+[2016.12.12-19.46.23:893][119]LogModuleManager: Shutting down and abandoning module ContentBrowser (105)
+[2016.12.12-19.46.23:894][119]LogModuleManager: Shutting down and abandoning module Paper2DEditor (104)
+[2016.12.12-19.46.23:894][119]LogModuleManager: Shutting down and abandoning module UdpMessaging (103)
+[2016.12.12-19.46.23:994][119]LogModuleManager: Shutting down and abandoning module TcpMessaging (102)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module Paper2D (100)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module VREditor (94)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module Sequencer (89)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module MessageLog (87)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module AssetTools (86)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module UMG (84)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module Slate (82)
+[2016.12.12-19.46.24:094][119]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
+[2016.12.12-19.46.24:097][119]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
+[2016.12.12-19.46.24:097][119]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
+[2016.12.12-19.46.24:097][119]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
+[2016.12.12-19.46.24:097][119]LogModuleManager: Shutting down and abandoning module Networking (76)
+[2016.12.12-19.46.24:097][119]LogModuleManager: Shutting down and abandoning module Core (75)
+[2016.12.12-19.46.24:097][119]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
+[2016.12.12-19.46.24:097][119]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2016.12.12-19.46.24:098][119]LogDirectoryWatcher: A directory notification for '../../../../../../projects/Unreal Projects/UnrealStickFigure2D/Content/' was aborted.
+[2016.12.12-19.46.24:098][119]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2016.12.12-19.46.24:098][119]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
+[2016.12.12-19.46.24:273][119]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
+[2016.12.12-19.46.24:281][119]LogDerivedDataCache: Shutdown
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module InputCore (24)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module Settings (23)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module OculusRift (22)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2016.12.12-19.46.24:281][119]LogOnline:Display: Unloading online subsystem: NULL
+[2016.12.12-19.46.24:281][119]LogModuleManager: Shutting down and abandoning module SSL (17)
+[2016.12.12-19.46.24:282][119]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2016.12.12-19.46.24:282][119]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2016.12.12-19.46.24:282][119]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.12.12-19.46.24:283][119]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.12.12-19.46.24:284][119]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.12.12-19.46.24:285][119]LogExit: Exiting.
+[2016.12.12-19.46.24:297][119]Log file closed, 12/12/16 11:46:24
